@@ -35,8 +35,8 @@ public class Hooks {
         try {
             DesiredCapabilities capabilities = DesiredCapabilities.chrome();
 
-            if (StringUtils.isNotEmpty(getenv("key"))) {
-                System.out.println(getenv("unutmaki dunya fani" +"key"));
+            if (StringUtils.isNotEmpty(System.getenv("key"))) {
+                System.out.println(getenv("**************************unutmaki dunya fani**************" +"key"));
                 ChromeOptions options = new ChromeOptions();
                 options.setExperimentalOption("w3c", false);
                 options.addArguments("disable-translate");
@@ -56,6 +56,7 @@ public class Hooks {
             }
 
             else {
+                System.out.println("*****************************key yok****************");
                 System.setProperty("webdriver.chrome.driver", "web_driver/chromedriver");
                 ChromeOptions options = new ChromeOptions();
                 options.addArguments("--start-fullscreen");
