@@ -1,5 +1,6 @@
 Feature: Login Process
 
+  @deneme
   Scenario: Epias Admin Login
     * "loginUsername" elementine "test1" degerini yaz
     * "loginPassword" elementine "123456" degerini yaz
