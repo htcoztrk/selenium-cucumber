@@ -1,0 +1,57 @@
+[
+  {
+    "key": "loginUsername",
+    "value": "//input[@type='text']",
+    "type": "xpath"
+  },
+  {
+    "key": "loginPassword",
+    "value": "//input[@type='password']",
+    "type": "xpath"
+  },
+  {
+    "key": "loginButton",
+    "value": ".km__c--button.km__c--button-is-primary",
+    "type": "css"
+  },
+  {
+    "key": "adminText",
+    "value": ".km__c--avatar-text",
+    "type": "css"
+  },
+  {
+    "key": "cikisButton",
+    "value": ".km__c--icon.km__c--icon-is-x-circle.undefined",
+    "type": "css"
+  },
+  {
+    "key": "loginLabel",
+    "value": ".km__p--login",
+    "type": "css"
+  },
+  {
+    "key": "hamburgerMenu",
+    "value": ".km__c--icon.km__c--icon-is-expander.undefined",
+    "type": "css"
+  },
+  {
+    "key": "hamburgerList",
+    "value": ".km__c--side-menu-item-group-title-text",
+    "type": "css"
+  },
+  {
+    "key": "hamburgerListFaturalama",
+    "value": "(//span[@class='km__c--side-menu-item-group-title-text'])[6]",
+    "type": "xpath"
+  },
+  {
+    "key": "hamburgerListFaturalamaAltLabel",
+    "value": "//a[@href='/invoicing']",
+    "type": "xpath"
+  },
+  {
+    "key": "DownloadButton",
+    "value": "//button[@class='km__c--button  km__c--button-is-secondary']",
+    "type": "xpath"
+  }
+]
