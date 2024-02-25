@@ -5,6 +5,7 @@ import java.net.URL;
 import java.util.HashMap;
 import java.util.Map;
 
+import groovy.util.logging.Slf4j;
 import io.cucumber.java.Before;
 import io.cucumber.java.After;
 
@@ -15,9 +16,12 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.LocalFileDetector;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import static java.lang.System.getenv;
 
+@Slf4j
 public class Hooks {
 
     //public String URL = "http://hub.testinium.io/wd/hub";
@@ -32,6 +36,7 @@ public class Hooks {
             DesiredCapabilities capabilities = DesiredCapabilities.chrome();
 
             if (StringUtils.isNotEmpty(getenv("key"))) {
+                System.out.println(getenv("unutmaki dunya fani" +"key"));
                 ChromeOptions options = new ChromeOptions();
                 options.setExperimentalOption("w3c", false);
                 options.addArguments("disable-translate");
