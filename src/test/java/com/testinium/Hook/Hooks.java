@@ -50,7 +50,7 @@ public class Hooks {
                 Map<String, Object> prefs = new HashMap<>();
                 options.setExperimentalOption("prefs", prefs);
                 capabilities.setCapability(ChromeOptions.CAPABILITY, options);
-               // capabilities.setCapability("key", System.getenv("key"));
+                capabilities.setCapability("key", System.getenv("key"));
                 capabilities.setCapability("testResultId", System.getenv("testResultId"));
                 webDriver = new RemoteWebDriver(new URL(URL), capabilities);
                 ((RemoteWebDriver) webDriver).setFileDetector(new LocalFileDetector());
